@@ -25,7 +25,7 @@ A few useful ways to setup and use Atlas programatically
 
 | Feature | Status |
 |---------|--------|
-| Free Tier (M0) | Not Done |
+| Free Tier (M0) | Done |
 | Shared/Flex (M2/5) | Not Done |
 | Dedicated (M10+) | Not Done |
 | EC2 Client | Not Done |

@@ -35,4 +35,5 @@ A few useful ways to setup and use Atlas programatically
 
 ## Changelog
 
+- 2025-03-03 Relational Migrator in Docker
 - 2025-02-20 Initial Setup

@@ -39,17 +39,16 @@ connection_strings = "mongodb+srv://free-tier-cluster-creat.qc893.mongodb.net"
 
 ### Additional items (IP Access and a Database User)
 
-1. copy the IP settings `cp additional/ip.tf ip.tf`
-1. check your current IP `curl http://ipinfo.io/ip`
-1. Update `variables.tf` with this IP and **save it**
-1. run `terraform plan` and you should see the planned modification
-1. run `terraform apply` and terraform will figure out how to make it happen answer `yes`
 1. copy the user/password setting `cp additional/user.tf user.tf`
 1. update the password you want in `user.tf` and **save it**
 1. run `terraform plan` and you should see the planned modification
 1. run `terraform apply` and terraform will figure out how to make it happen answer `yes`
 1. You should now be able to connect with **Compass** or `mongosh` as user "terraformed-user" with the password you set
 1. Feel free to modify anything you want and apply it
+
+### Additional local items (requires Docker)
+
+If you'd like to try out Relational Migrator, you can run `docker compose -f local/relational-migrator.yml up -d` which will run a postgres db (`localhost:5432`), adminer to manage it (`http://localhost:9090`) and Relational Migrator (`http://localhost:8080`). When your done you can clean this up with `docker compose -f local/relational-migrator.yml down`
 
 ### Clean up when you are finished
 
